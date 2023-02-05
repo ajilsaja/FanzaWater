@@ -414,6 +414,41 @@ section {
   color: #10221b;
 }
 
+
+.overlay a{
+  line-height: 0;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2000;
+  text-align: center;
+  padding: 130px 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all .1 ease-out;
+}
+
+.overlay img{
+  width: 30%;
+  margin: auto;
+}
+
+.overlay:target {
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, .8);
+  transition: all .1 ease-in;
+}
+
 .packages {
   background: #eee;
 }
@@ -854,5 +889,11 @@ section {
   .heading {
     font-size: 3rem;
   }
+}
+
+@media (max-width:768px){
+  .container-popup .popup-image img {
+    width: 95%;
+}
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -35,7 +36,6 @@ window.onload = () =>{
         document.querySelector('.header').classList.remove('active');
     }
 };
-
 
 var swiper = new Swiper(".home-slider", {
     loop:true, 
