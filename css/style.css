@@ -414,41 +414,6 @@ section {
   color: #10221b;
 }
 
-
-.overlay a{
-  line-height: 0;
-}
-
-.overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 2000;
-  text-align: center;
-  padding: 130px 0;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  transition: all .1 ease-out;
-}
-
-.overlay img{
-  width: 30%;
-  margin: auto;
-}
-
-.overlay:target {
-  bottom: 0;
-  right: 0;
-  width: auto;
-  height: auto;
-  background-color: rgba(0, 0, 0, .8);
-  transition: all .1 ease-in;
-}
-
 .packages {
   background: #eee;
 }
@@ -471,10 +436,13 @@ section {
 }
 
 .packages .box-container .box:hover {
-  background: #10221b;
+  background-color: #143353;
 }
 
 .packages .box-container .box:hover .content > * {
+  color: #fff;
+}
+.packages .box-container .box:hover .price > * {
   color: #fff;
 }
 
@@ -519,11 +487,10 @@ section {
   line-height: 2;
 }
 
-.packages .box-container .box .content .price {
+.packages .box-container .box .content .price{
   font-size: 2rem;
   color: #219150;
 }
-
 .services {
   background: #eee;
 }
@@ -730,6 +697,10 @@ section {
 .newsletter .content form .btn:hover {
   background: none;
   color: #10221b;
+}
+
+.clients{
+  background-color: #eee;
 }
 
 .clients .silde {
