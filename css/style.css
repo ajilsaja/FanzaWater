@@ -64,7 +64,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 9%;
+  padding: 5px 5%;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,30 +75,43 @@ section {
 }
 
 .header.active {
-  background: #fff;
+  background-color: #fff;
+  border-bottom:1px solid #364f6b;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
   margin-right: auto;
+}
+
+.header .logo span {
   font-size: 2.5rem;
   color: #10221b;
   font-weight: bolder;
 }
 
-.header .logo i {
-  color: #219150;
+.header .logo img{
+  width: 200px;
+}
+
+.header .navbar {
+  display: flex;
 }
 
 .header .navbar a {
-  margin-left: 2rem;
+  display: block;
+  padding: 8px 18px;
+  transition: 0.2s;
+  border-radius: 30px;
   font-size: 1.7rem;
+  font-weight: 600;
   color: #10221b;
 }
 
 .header .navbar a:hover {
-  color: #219150;
+  color: #fff;
+  background-color: #284668;
 }
 
 .header .navbar #nav-close {
@@ -118,7 +131,7 @@ section {
 
 .header .icons a:hover,
 .header .icons div:hover {
-  color: #219150;
+  color: #284668;
 }
 
 .header #menu-btn {
@@ -161,7 +174,7 @@ section {
 }
 
 .search-form #close-search:hover {
-  color: #219150;
+  color: #ff0000;
 }
 
 .search-form form {
@@ -209,7 +222,7 @@ section {
 }
 
 .search-form form label:hover {
-  color: #219150;
+  color: #284668;
 }
 
 .home {
@@ -409,9 +422,9 @@ section {
   color: #219150;
 }
 
-.shop .slide .content .stars i {
-  font-size: 1.7rem;
-  color: #10221b;
+.shop .slide .content .price h4{
+  margin: 1px;
+  font-size: 2rem; 
 }
 
 .packages {
