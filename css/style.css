@@ -823,12 +823,18 @@ section {
   .header #menu-btn {
     display: inline-block;
   }
+
+  .header,
+  .header.active {
+    padding: 3px 5%;
+  }
+  
   .header .navbar {
     position: fixed;
     top: 0;
     left: -110%;
     background: #fff;
-    z-index: 10000;
+    z-index: 1000;
     width: 35rem;
     height: 100%;
     display: -webkit-box;
