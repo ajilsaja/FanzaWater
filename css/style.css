@@ -766,8 +766,6 @@ section {
   padding-right: 2rem;
 }
 
-
-
 .footer .credit {
   text-align: center;
   margin-top: 2.5rem;
@@ -826,7 +824,7 @@ section {
 
   .header,
   .header.active {
-    padding: 3px 5%;
+    padding: 4px 5%;
   }
   
   .header .navbar {
